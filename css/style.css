@@ -1,3 +1,45 @@
+* {
+  box-sizing: border-box;
+}
 
+header {
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header a {
+  color: black;
+  position: absolute;
+  left: 6.5%;
+  zoom: 125%;
+}
+header img {
+  height: 45%;
+}
+
+.location-search {
+  background-color: #eaeaea;
+  color: #353535;
+  height: 50px;
+  box-shadow: inset 0px 5px 5px -1px rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.location-search input {
+  width: 165px;
+  border-style: none;
+  background-color: #eaeaea;
+  font-family: "Roboto";
+  font-weight: bold;
+}
+.location-search input::placeholder {
+  color: #353535;
+  text-align: center;
+}
+.location-search input:focus {
+  outline: none;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,24 @@
+.location-search{
+    background-color: #eaeaea;
+    color: #353535;
+    height: 50px;
+    box-shadow: inset 0px 5px 5px -1px rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    input{
+        width: 165px;
+        border-style: none;
+        background-color: #eaeaea;
+        font-family: "Roboto";
+        font-weight: bold;
+        &::placeholder{
+            color: #353535;
+            text-align: center;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+
+}
