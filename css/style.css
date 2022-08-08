@@ -22,6 +22,38 @@ header img {
   height: 45%;
 }
 
+footer {
+  height: 200px;
+  background-color: #353535;
+}
+footer h3 {
+  font-family: "Shrikhand";
+  font-weight: normal;
+  color: white;
+  margin-left: 25px;
+  padding-top: 25px;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  color: #9356DC;
+}
+footer ul {
+  padding-left: 0;
+  margin-left: 25px;
+}
+footer i {
+  width: 14px;
+  font-size: 14px;
+  margin-right: 13px;
+}
+footer li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
 .location-search {
   background-color: #eaeaea;
   color: #353535;
@@ -79,6 +111,71 @@ nav p {
   }
 }
 
+.functioning {
+  height: 440px;
+  margin-top: 50px;
+}
+.functioning h2 {
+  margin: 0 0 30px 20px;
+}
+.functioning .stages-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 25px;
+}
+@media screen and (min-width: 992px) {
+  .functioning .stages-group {
+    flex-direction: row;
+  }
+}
+
+.stage {
+  width: 80%;
+  height: 75px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px 3px #f1eded;
+}
+@media screen and (min-width: 992px) {
+  .stage {
+    width: 30%;
+  }
+}
+.stage:hover {
+  background-color: #f5edff;
+}
+.stage:hover i {
+  color: #9356DC;
+}
+.stage .stage__number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  margin-left: -10px;
+  vertical-align: baseline;
+  background-color: #9356DC;
+  color: white;
+  font-size: small;
+  border-radius: 100%;
+}
+.stage i {
+  margin-left: 25px;
+  color: #7e7e7e;
+  font-size: 18px;
+}
+.stage .stage__text {
+  margin-left: 25px;
+  font-weight: bold;
+}
+
 button {
   height: 50px;
   padding-right: 20px;
@@ -87,10 +184,10 @@ button {
   border-radius: 30px;
   background: linear-gradient(to top, #9356DC, 45%, #FF79DA);
   color: white;
-  box-shadow: 0px 0px 10px -3px #000000;
+  box-shadow: 0px 0px 7px -3px #000000;
 }
 button:hover {
-  box-shadow: 0px 0px 15px -3px #000000;
+  box-shadow: 0px 0px 10px -3px #000000;
   opacity: 0.75;
 }
 
