@@ -1,0 +1,20 @@
+.wrapper{
+    position: relative;
+}
+.card{
+    .new{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 195px;
+        right: 10px;
+        width: 80px;
+        min-height: 30px;
+        border-radius: 3px;
+        background-color: $tertiary;
+        font-size: 14px;
+        font-weight: 600;
+        color: darken($tertiary, 35%);
+    }
+}
