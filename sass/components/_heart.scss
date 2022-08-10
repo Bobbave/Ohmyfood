@@ -1,0 +1,23 @@
+.heart{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    border-style: none;
+    background-color: transparent;
+        & .fa-heart{
+            color: white;
+            font-size: 22px;
+            text-shadow: 0 0 3px #000;
+            &:hover{
+                // animation: fill-heart 3s backwards;
+            }
+        }
+}
+// @keyframes fill-heart{
+//     from{
+//         color:transparent;
+//     }
+//     to{
+//         color: linear-gradient(top, $primary, $secondary);
+//     }
+// }
