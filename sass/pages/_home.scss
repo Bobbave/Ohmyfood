@@ -52,6 +52,9 @@ nav{
 .functioning{
     height: 440px;
     padding-top: 50px;
+    @include desktop-only{
+        height: 250px;
+    }
     h2{
         margin: 0 0 30px 20px;
     }

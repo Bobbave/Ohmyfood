@@ -1,0 +1,120 @@
+.background{
+    height: 270px;
+    background-size: cover;
+    background-position: center;
+    @include tablet-only{
+        height: 400px;
+    }
+    @include desktop-only{
+        height: 450px;
+    }
+    &.pg{
+        background-image: url(../../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+    }
+    &.alf{
+        background-image: url(../../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+    }
+    &.lne{
+        background-image: url(../../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+    }
+    &.ldds{
+        background-image: url(../../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+    }
+}
+.menu{
+    background-color: #f6f6f6;
+    height: 1160px;
+    margin-top: -60px;
+    border-radius: 40px 40px 0px 0px;
+    @include desktop-only{
+        height: 550px;
+    }
+    h1{
+        font-family: 'Shrikhand';
+        font-size: 27px;
+        font-weight: lighter;
+        padding: 40px 0px 15px 15px;
+        @include tablet-only{
+            padding: 30px 0px 30px 20px;
+        }
+    }
+    .heart-menu{
+        bottom: 40px;
+        right: 30px;
+    }
+    a{
+        width: 185px;
+        margin: 10px auto 0px auto;
+        @include tablet-only{
+            margin-top: 5px;
+        }
+        @include desktop-only{
+            margin-top: 15px;
+        }
+    }
+}
+@include tablet-only{
+    .all-meals{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+@include desktop-only{
+    .all-meals{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-left: 20px;
+    }
+}
+.meal-part{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-bottom: 40px;
+    @include tablet-only{
+        width: 100%;
+    }
+    h2{
+        margin: 0px 0px 0px 15px;
+        font-size: 17px;
+        font-weight: 100;
+        border-bottom: 3px solid;
+        border-color: $tertiary;
+        width: 40px;
+    }
+}
+.meal-part__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 90%;
+    height: 70px;
+    margin-left: 5%;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: $base-shadow;
+    h3 {
+        margin: 0px 0px 0px 15px;
+        font-size: 17px;
+    }
+    .meal-part__information{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p{
+            margin: 0px 0px 0px 0px;
+            font-size: 14px;
+        }
+        .meal-part__description{
+            margin-left: 15px;
+        }
+        .meal-part__price{
+            margin-right: 20px;
+            font-weight: bold;
+        }
+    }
+}
