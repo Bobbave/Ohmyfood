@@ -298,6 +298,9 @@ nav p {
 }
 
 .menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: #f6f6f6;
   height: 1160px;
   margin-top: -60px;
@@ -305,37 +308,28 @@ nav p {
 }
 @media screen and (min-width: 992px) {
   .menu {
-    height: 550px;
+    height: 600px;
   }
 }
 .menu h1 {
   font-family: "Shrikhand";
   font-size: 27px;
   font-weight: lighter;
-  padding: 40px 0px 15px 15px;
-}
-@media screen and (min-width: 768px) {
-  .menu h1 {
-    padding: 30px 0px 30px 20px;
-  }
+  padding: 30px 0px 0px 15px;
+  margin: 0px;
 }
 .menu .heart-menu {
-  bottom: 40px;
+  bottom: 5px;
   right: 30px;
 }
 .menu a {
   width: 185px;
-  margin: 10px auto 0px auto;
+  margin: auto;
+  vertical-align: baseline;
 }
-@media screen and (min-width: 768px) {
-  .menu a {
-    margin-top: 5px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .menu a {
-    margin-top: 15px;
-  }
+
+.ne {
+  height: 1240px;
 }
 
 @media screen and (min-width: 768px) {
@@ -358,7 +352,6 @@ nav p {
   flex-direction: column;
   align-items: flex-start;
   gap: 15px;
-  padding-bottom: 40px;
 }
 @media screen and (min-width: 768px) {
   .meal-part {
@@ -372,6 +365,7 @@ nav p {
   border-bottom: 3px solid;
   border-color: #99E2D0;
   width: 40px;
+  padding-top: 40px;
 }
 
 .meal-part__box {
@@ -405,6 +399,14 @@ nav p {
 .meal-part__box .meal-part__information .meal-part__price {
   margin-right: 20px;
   font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
 }
 
 .base-button {

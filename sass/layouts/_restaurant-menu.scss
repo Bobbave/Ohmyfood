@@ -22,36 +22,35 @@
     }
 }
 .menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background-color: #f6f6f6;
     height: 1160px;
     margin-top: -60px;
     border-radius: 40px 40px 0px 0px;
     @include desktop-only{
-        height: 550px;
+        height: 600px;
     }
     h1{
         font-family: 'Shrikhand';
         font-size: 27px;
         font-weight: lighter;
-        padding: 40px 0px 15px 15px;
-        @include tablet-only{
-            padding: 30px 0px 30px 20px;
-        }
+        padding: 30px 0px 0px 15px;
+        margin: 0px;
     }
     .heart-menu{
-        bottom: 40px;
+        bottom: 5px;
         right: 30px;
     }
     a{
         width: 185px;
-        margin: 10px auto 0px auto;
-        @include tablet-only{
-            margin-top: 5px;
-        }
-        @include desktop-only{
-            margin-top: 15px;
-        }
+        margin: auto;
+        vertical-align: baseline;
     }
+}
+.ne{
+    height: 1240px; //for the restaurant "la note enchantée" because the menu is bigger there
 }
 @include tablet-only{
     .all-meals{
@@ -73,7 +72,6 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 15px;
-    padding-bottom: 40px;
     @include tablet-only{
         width: 100%;
     }
@@ -84,6 +82,7 @@
         border-bottom: 3px solid;
         border-color: $tertiary;
         width: 40px;
+        padding-top: 40px;
     }
 }
 .meal-part__box{
@@ -117,4 +116,11 @@
             font-weight: bold;
         }
     }
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
 }
