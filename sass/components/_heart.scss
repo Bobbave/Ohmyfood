@@ -5,19 +5,33 @@
     border-style: none;
     background-color: transparent;
         & .fa-heart{
-            color: white;
             font-size: 22px;
-            text-shadow: 0 0 3px #000;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            color: transparent;
             &:hover{
-                // animation: fill-heart 3s backwards;
+                animation: fill 0.5s ease-in-out forwards;
             }
         }
 }
-// @keyframes fill-heart{
-//     from{
-//         color:transparent;
-//     }
-//     to{
-//         color: linear-gradient(top, $primary, $secondary);
-//     }
-// }
+
+@keyframes fill{
+    from{
+        background: -webkit-linear-gradient(top, $primary, $secondary);
+        background-clip:text;
+        -webkit-background-clip: text;
+        background-repeat: no-repeat;
+        color: transparent;
+        background-size: 0%;
+        opacity: 0.5;
+    }
+    to{ 
+        background: -webkit-linear-gradient(top, $primary, $secondary);
+        background-clip:text;
+        -webkit-background-clip: text;
+        background-repeat: no-repeat;
+        color: transparent;
+        background-size: 100%;
+        opacity: 1;
+    }
+}
