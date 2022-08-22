@@ -129,7 +129,7 @@
         line-height: 70px;
         width: 0%;
         position: absolute;
-        right: 5%;
+        right: 10%;
         opacity: 0;
         background-color: $tertiary;
         text-align: center;
@@ -173,7 +173,7 @@
     }
     to{
         opacity: 1;
-        transform: translateY(0%)
+        transform: translateY(0%);
     }
 }
 @keyframes check{
@@ -181,12 +181,14 @@
         width: 0%;
     }
     24%{
+        right: 5%;
         opacity: 0;
     }
     25%{
         opacity: 1;
     }
     100%{
+        right: 5%;
         width: 16%;
         opacity: 1;
     }

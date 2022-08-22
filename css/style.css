@@ -399,7 +399,7 @@ footer a {
   color: white;
 }
 footer a:hover {
-  color: #9356DC;
+  color: #FF79DA;
 }
 footer ul {
   padding-left: 0;
@@ -775,7 +775,7 @@ nav p {
   line-height: 70px;
   width: 0%;
   position: absolute;
-  right: 5%;
+  right: 10%;
   opacity: 0;
   background-color: #99E2D0;
   text-align: center;
@@ -829,12 +829,14 @@ nav p {
     width: 0%;
   }
   24% {
+    right: 5%;
     opacity: 0;
   }
   25% {
     opacity: 1;
   }
   100% {
+    right: 5%;
     width: 16%;
     opacity: 1;
   }
@@ -903,7 +905,7 @@ nav p {
   color: transparent;
 }
 .heart .fa-heart:hover {
-  animation: fill 0.5s ease-in-out forwards;
+  animation: fill 0.7s ease-in-out forwards;
 }
 
 @keyframes fill {
@@ -913,7 +915,8 @@ nav p {
     -webkit-background-clip: text;
     background-repeat: no-repeat;
     color: transparent;
-    background-size: 0%;
+    background-size: 100% 10%;
+    background-position: 0px 200%;
     opacity: 0.5;
   }
   to {
@@ -922,7 +925,7 @@ nav p {
     -webkit-background-clip: text;
     background-repeat: no-repeat;
     color: transparent;
-    background-size: 100%;
+    background-size: 100% 100%;
     opacity: 1;
   }
 }

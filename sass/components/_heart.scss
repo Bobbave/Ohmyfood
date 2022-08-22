@@ -10,7 +10,7 @@
             -webkit-text-stroke-color: black;
             color: transparent;
             &:hover{
-                animation: fill 0.5s ease-in-out forwards;
+                animation: fill 0.7s ease-in-out forwards;
             }
         }
 }
@@ -22,7 +22,8 @@
         -webkit-background-clip: text;
         background-repeat: no-repeat;
         color: transparent;
-        background-size: 0%;
+        background-size: 100% 10%;
+        background-position: 0px 200%;
         opacity: 0.5;
     }
     to{ 
@@ -31,7 +32,7 @@
         -webkit-background-clip: text;
         background-repeat: no-repeat;
         color: transparent;
-        background-size: 100%;
+        background-size: 100% 100%;
         opacity: 1;
     }
 }
