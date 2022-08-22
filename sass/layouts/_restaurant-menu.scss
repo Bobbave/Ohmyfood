@@ -90,9 +90,6 @@
         padding-top: 40px;
     }
 }
-
-
-
 .meal-part__box{
     display: flex;
     flex-direction: column;
@@ -101,7 +98,7 @@
     width: 90%;
     height: 70px;
     margin-left: 5%;
-    border-radius: 25px;
+    border-radius: 15px;
     background-color: white;
     box-shadow: $base-shadow;
     h3 {
@@ -127,7 +124,6 @@
             margin-right: 20px;
             font-weight: bold;
         }
-
     }
     .check{
         line-height: 70px;
@@ -139,7 +135,7 @@
         text-align: center;
         color: white;
         font-size: 23px;
-        border-radius: 0 25px 25px 0;
+        border-radius: 0 15px 15px 0;
        }
     &:hover{
         & > .meal-part__information{
@@ -191,7 +187,7 @@
         opacity: 1;
     }
     100%{
-        width: 20%;
+        width: 16%;
         opacity: 1;
     }
 }

@@ -18,7 +18,7 @@
 @keyframes fill{
     from{
         background: -webkit-linear-gradient(top, $primary, $secondary);
-        background-clip:text;
+        background-clip: text;
         -webkit-background-clip: text;
         background-repeat: no-repeat;
         color: transparent;
@@ -27,7 +27,7 @@
     }
     to{ 
         background: -webkit-linear-gradient(top, $primary, $secondary);
-        background-clip:text;
+        background-clip: text;
         -webkit-background-clip: text;
         background-repeat: no-repeat;
         color: transparent;
